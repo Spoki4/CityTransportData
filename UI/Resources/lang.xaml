@@ -1,0 +1,29 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:local="clr-namespace:UI.Resources"
+                    xmlns:v="clr-namespace:System;assembly=mscorlib">
+
+    <v:String x:Key="AppTitle">Учетная система для предприятия внутригородских перевозок</v:String>
+    <v:String x:Key="DriverWindowTitle">Водители</v:String>
+    <v:String x:Key="DriverCreateWindowTitle">Водители</v:String>
+    <v:String x:Key="TransportWindowTitle">Транспорт</v:String>
+    <v:String x:Key="RouteWindowTitle">Путь</v:String>
+    
+    
+    <v:String x:Key="AppMenuFile">Файл</v:String>
+    <v:String x:Key="AppMenuImport">Импорт</v:String>
+    <v:String x:Key="AppMenuExport">Экспорт</v:String>
+    <v:String x:Key="AppMenuExit">Закрыть</v:String>
+    <v:String x:Key="AppMenuData">Данные</v:String>
+    <v:String x:Key="AppMenuDrivers">Водители</v:String>
+    <v:String x:Key="AppMenuTransports">Транспорт</v:String>
+    <v:String x:Key="AppMenuRoute">Пути</v:String>
+    <v:String x:Key="AppMenuJourney">Рейсы</v:String>
+    <v:String x:Key="AppMenuReport">Отчеты</v:String>
+    <v:String x:Key="AppMenuReportPeriod">Период</v:String>
+    <v:String x:Key="AppMenuReportTickets">Проданные билеты</v:String>
+    <v:String x:Key="AppMenuReportDriverJourney">Рейсы по водителям</v:String>
+    <v:String x:Key="AppMenuReportJourneyRoute">Рейсы по маршрутам</v:String>
+    <v:String x:Key="AppMenuReportMostValuedJourney">Прибыльные рейсы</v:String>
+
+</ResourceDictionary>

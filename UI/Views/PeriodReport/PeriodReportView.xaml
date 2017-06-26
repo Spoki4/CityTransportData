@@ -1,0 +1,17 @@
+﻿<Window x:Class="UI.Views.PeriodReport.PeriodReportView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:UI.Views.PeriodReport"
+        mc:Ignorable="d"
+        Title="PeriodReportView" Height="92.796" Width="364.831" ResizeMode="NoResize">
+    <Grid Margin="0,0,0,-1">
+        <Label Content="От" HorizontalAlignment="Left" Margin="18,7,0,0" VerticalAlignment="Top"/>
+        <Label Content="До" HorizontalAlignment="Left" Margin="189,7,0,0" VerticalAlignment="Top"/>
+        <DatePicker Name="Ot" HorizontalAlignment="Left" Margin="59,8,0,0" VerticalAlignment="Top"/>
+        <DatePicker Name="Do" HorizontalAlignment="Left" Margin="226,9,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="DoIt" Content="Сформировать" HorizontalAlignment="Left" Margin="261,39,0,0" VerticalAlignment="Top" Width="88"/>
+
+    </Grid>
+</Window>

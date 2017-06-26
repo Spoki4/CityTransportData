@@ -1,0 +1,36 @@
+﻿<Window x:Class="UI.Views.Journey.JourneyView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:cal="http://www.caliburnproject.org"
+        xmlns:local="clr-namespace:UI.Views.Journey"
+        Title="Рейсы" Height="298.093" Width="435.381">
+    <Grid>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="25" />
+                <RowDefinition Height="1*" />
+            </Grid.RowDefinitions>
+
+            <WrapPanel VerticalAlignment="Center" Margin="10, 0">
+                <Button Name="Create" Content="Создать"></Button>
+            </WrapPanel>
+
+            <DataGrid Grid.Row="1" IsReadOnly="True" AutoGenerateColumns="False" x:Name="Journeys">
+                <DataGrid.RowStyle>
+                    <Style TargetType="DataGridRow">
+                        <Setter Property="cal:Message.Attach" Value="[MouseDoubleClick] = [Action RowSelect($dataContext)]"/>
+                    </Style>
+                </DataGrid.RowStyle>
+                <DataGrid.Columns>
+                    <DataGridTextColumn Header="#" Binding="{Binding Id}"/>
+                    <DataGridTextColumn Header="Водитель" Binding="{Binding Driver.Fullname}" />
+                    <DataGridTextColumn Header="Путь" Binding="{Binding Route.Name}" />
+                    <DataGridTextColumn Header="Транспорт" Binding="{Binding Transport.Name}" />
+                    <DataGridTextColumn Header="Дата" Binding="{Binding Date}" />
+                    <DataGridTextColumn Header="Билеты" Binding="{Binding TicketsCount}" />
+                    <DataGridTextColumn Header="Сумм. стоим." Binding="{Binding Summ}" />
+                </DataGrid.Columns>
+            </DataGrid>
+        </Grid>
+    </Grid>
+</Window>

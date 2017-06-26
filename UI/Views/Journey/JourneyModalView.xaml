@@ -1,0 +1,25 @@
+﻿<Window x:Class="UI.Views.Journey.JourneyModalView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:UI.Views.Journey"
+        mc:Ignorable="d"
+        Title="Рейс" Height="231.355" Width="334.322">
+    <Grid Margin="0,0,0,-1">
+        <Label Content="Водитель:" HorizontalAlignment="Left" Margin="48,10,0,0" VerticalAlignment="Top"/>
+        <Label Content="Транспорт:" HorizontalAlignment="Left" Margin="42,36,0,0" VerticalAlignment="Top"/>
+        <Label Content="Рейс:" HorizontalAlignment="Left" Margin="74,62,0,0" VerticalAlignment="Top"/>
+        <ComboBox x:Name="Drivers" SelectedItem="{Binding DriverVal}" DisplayMemberPath="Fullname" HorizontalAlignment="Left" Margin="112,10,0,0" VerticalAlignment="Top" Width="197"/>
+        <ComboBox x:Name="Transports" SelectedItem="{Binding TransportVal}" DisplayMemberPath="Name" HorizontalAlignment="Left" Margin="112,36,0,0" VerticalAlignment="Top" Width="197"/>
+        <ComboBox x:Name="Routes" SelectedItem="{Binding RouteVal}" DisplayMemberPath="Name" HorizontalAlignment="Left" Margin="112,62,0,0" VerticalAlignment="Top" Width="197"/>
+        <Label Content="Дата:" HorizontalAlignment="Left" Margin="74,88,0,0" VerticalAlignment="Top"/>
+        <DatePicker Name="Date" HorizontalAlignment="Left" Margin="112,90,0,0" VerticalAlignment="Top" Width="197"/>
+        <Button x:Name="Save" Content="Сохранить" HorizontalAlignment="Left" Margin="234,171,0,0" VerticalAlignment="Top" Width="75"/>
+        <Label Content="Кол-во билетов:" HorizontalAlignment="Left" Margin="13,114,0,0" VerticalAlignment="Top"/>
+        <Label Content="Стоимость билета:" HorizontalAlignment="Left" Margin="0,140,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="TicketCount" HorizontalAlignment="Left" Height="23" Margin="112,117,0,0" VerticalAlignment="Top" Width="197"/>
+        <TextBox x:Name="TicketPrice" HorizontalAlignment="Left" Height="23" Margin="112,143,0,0" VerticalAlignment="Top" Width="197"/>
+
+    </Grid>
+</Window>
